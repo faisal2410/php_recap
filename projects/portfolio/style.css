@@ -1,0 +1,416 @@
+header {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 20px;
+}
+
+a {
+  color: #444;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #000;
+}
+
+
+/* add some style to the hero section */
+#hero {
+  height: 100vh;
+  background: url('images/1.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: #444;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+
+.grainy-gradient {
+  /* fallback background color */
+  background-color: #b6b6b6;
+
+  /* add grainy background pattern */
+  background-image: 
+    url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Crect x='0' y='0' width='2' height='2' fill='%23000000'/%3E%3Crect x='2' y='2' width='2' height='2' fill='%23000000'/%3E%3C/svg%3E");
+
+  /* add linear gradient */
+  background-image:
+    linear-gradient(45deg, #e1e1e1, #f4f4f4);
+
+  /* blend background pattern with gradient */
+  mix-blend-mode: multiply;
+}
+
+.photos {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-items: center; /* center the images horizontally */
+  align-items: center; /* center the images vertically */
+}
+
+.photo-grid img {
+  width: 100%; /* make all images the same width */
+  height: 100%; /* make all images the same height */
+  object-fit: cover; /* ensure the entire image is displayed */
+}
+
+/* add some style to the "My Work" heading */
+.photos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #444;
+}
+
+/* style the photos to have a border and hover effect */
+.photo-grid img {
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.photo-grid img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* add a hover effect to the photo grid */
+.photo-grid:hover img {
+  filter: grayscale(80%);
+}
+
+/* add some style to the "About Me" heading */
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #444;
+}
+
+/* style the paragraph text */
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #666;
+}
+
+/* add a background color and padding to the section */
+#about {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+#skills {
+display: flex;
+justify-content: center;
+}
+
+#skills ul {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+list-style: none;
+}
+
+#skills li {
+padding: 10px;
+margin: 10px;
+background-color: #f2f2f2;
+border-radius: 5px;
+}
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container li {
+  width: 48%;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #444;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.container li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+/* style the "Projects" section */
+#projects {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+/* style the project containers */
+.project {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project p {
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.project a:hover {
+  background-color: #555;
+}
+
+
+/* Style for Contact section */
+#contact {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#contact h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact form label {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#contact form textarea {
+  height: 150px;
+}
+
+#contact form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#projects {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: calc(50% - 20px);
+  margin-bottom: 40px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.project a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #006D87;
+}
+
+
+/* add some style to the "Get In Touch" button */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #444;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #fff;
+  color: #444;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+/* add some style to the footer */
+footer {
+  padding: 40px 0;
+  background: #333;
+  color: #fff;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  
+  header button {
+    display: block;
+  }
+  
+  header .logo {
+    margin: 0 auto;
+  }
+  
+  .menu {
+    display: none;
+  }
+}
